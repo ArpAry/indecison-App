@@ -1,0 +1,45 @@
+//big button
+.bigbutton{
+    background:$purple;
+    border:none;
+    border-bottom:.6rem  solid darken($purple,10%);
+    color:white;
+    font-weight:bold;
+    font-size: $l-size;
+    margin-bottom:$m-size;
+    padding:2.4rem;
+    width:100%;
+    word-break: break-all;
+}
+
+//example for applying property on pseudo class
+.bigbutton:disabled{
+    opacity:.5;
+
+}
+
+//Button
+.addoptionbutton{
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple,10%);
+    color:white;
+    font-weight:500;
+    padding:$s-size;
+}
+
+
+//BEM
+.addoptionbutton--link{
+    background:none;
+    border: none;
+    color:$color-whiteoff;
+    padding:0;
+    word-break: break-all;
+}
+@media(min-width:$smallwidth)
+{
+    .bigbutton{
+        margin-bottom: $xl-size;
+    }
+}
